@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.switch-button {
+  text-align: right;
+  margin-top: 2%;
+  margin-right: 2%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.material-icons {
+    border-color: rgb(255, 255, 255);
+    color: rgb(124, 125, 125);
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 40px;
+    display:inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.line-items {
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 17%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.item-line {
+  margin-left: 3%;
+  margin-right: 3%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 20%);
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.line-name {
+  text-align: center;
+  font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.line-color {
+  text-align: center;
+  font-size: small;
+}
+
+.line-price {
+  text-align: center;
+  color: #ce0e0e;
+  font-size: small;
+  font-weight: bolder;
+}
+
+.line-button {
+  margin-left: 50%;
+  height: 25px;
+  width: 100px;
+  font-size:x-small;
+  color: #ce0e0e;
+  border: 1px solid #ce0e0e;
+  border-radius: 20px;
+  font-weight: bolder;
+}
+
+.cards-tablet {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  margin-top: 1%;
+  margin-left: 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 15%);
+  grid-gap: 15%;
+}
+
+.item-card {
+  display: grid;
+  width: 250px;
+  height: 250px;
+  -webkit-box-shadow: 0px 8px 8px 3px rgba(3, 8, 11, 0.2);
+  -moz-box-shadow: 0px 8px 8px 3px rgba(3, 8, 11, 0.2);
+  box-shadow: 0px 8px 8px 3px rgba(3, 8, 11, 0.2);
+}
+
+.card-name {
+  height: 4px;
+  font-weight: 500;
+}
+
+.card-color {
+  height: 4px;
+  font-size: small;
+}
+
+.card-price {
+  height: 20px;
+  color: #ce0e0e;
+  font-weight: bolder;
+}
+
+.card-button {
+  height: 25px;
+  margin-left: 26%;
+  color: #ce0e0e;
+  border: 2px solid #ce0e0e;
+  border-radius: 20px;
+  font-weight: bolder;
+}
+
+.img-normal {
+  overflow:hidden;
+  padding-left: 30px;
+  max-width: 180px;
+  max-height: 150px;
+  width:80%;
+}
+
+.img-small {
+  overflow:hidden;
+  max-width: 25%;
 }
