@@ -13,7 +13,7 @@ export default function ListView (props) {
     });
 
   return (
-    <div className="line-items">
+    <div className="items">
       {productsRows}
     </div>
   )
